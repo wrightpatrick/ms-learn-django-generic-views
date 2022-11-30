@@ -39,11 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # TODO: Register crispy_forms
+    'crispy_forms',
 
 
 ]
 
 # TODO: Set template_pack
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 MIDDLEWARE = [

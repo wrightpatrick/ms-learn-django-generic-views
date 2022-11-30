@@ -6,9 +6,9 @@ urlpatterns = [
     path('shelter/<int:pk>', views.shelter_detail, name='shelter_detail'),
 
     # TODO: Register detail view
-
+    path('dog/<int:pk>', views.DogDetailView.as_view(), name='dog_detail'),
 
     # TODO: Register create view
-
+    path('dog/register', views.DogCreateView.as_view(), name='dog_register'),
 
 ]

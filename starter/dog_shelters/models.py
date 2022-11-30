@@ -1,5 +1,6 @@
 from django.db import models
 # TODO: Import reverse
+from django.urls import reverse
 
 
 # Create your models here.
@@ -20,3 +21,5 @@ class Dog(models.Model):
         return self.name
     
     # TODO: Add get_absolute_url
+    def get_absolute_url(self):
+        return reverse('dog_detail', kwargs={"pk": self.pk})
